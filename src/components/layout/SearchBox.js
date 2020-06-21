@@ -13,27 +13,36 @@ const SearchBox = () => {
   } = useContext(ForecastContext);
 
   const [query, setQuery] = useState('');
+  const [hasSearched, setHasSearched] = useState(false);
 
   useEffect(() => {
-    if (!query) return clearSuggestions();
+    if (!query || hasSearched) return clearSuggestions();
 
     getSuggestions(query);
 
     // eslint-disable-next-line
   }, [query]);
 
+  const handleChange = event => {
+    setQuery(event.target.value);
+
+    if (hasSearched) setHasSearched(false);
+  };
+
   const getForecast = event => {
     event.preventDefault();
 
     getForecastGlobal(query);
 
-    setQuery('');
+    clearSuggestions();
   };
 
   const getForecastFromSuggestions = placeName => {
-    setQuery('');
+    setQuery(`${placeName.split(', ')[0]}, ${placeName.split(', ')[1]}`);
 
     getForecastGlobal(placeName);
+
+    setHasSearched(true);
   };
 
   return (
@@ -41,7 +50,7 @@ const SearchBox = () => {
       <form onSubmit={getForecast}>
         <i className='fas fa-map-marker-alt icon-left'></i>
         <input
-          onChange={event => setQuery(event.target.value)}
+          onChange={handleChange}
           value={query}
           autoComplete='off'
           name='query'
