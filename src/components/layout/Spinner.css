@@ -1,0 +1,9 @@
+.spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.spinner .icon {
+  font-size: 4rem;
+}

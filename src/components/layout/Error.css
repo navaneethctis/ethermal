@@ -1,0 +1,11 @@
+.error {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.error .icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}

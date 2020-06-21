@@ -1,0 +1,23 @@
+.forecast-section {
+  display: flex;
+  flex-direction: column;
+  margin: 2.6rem 0;
+}
+
+.forecast-section .tab-swiper-container,
+.forecast-section .card-swiper-container {
+  margin: 0;
+}
+
+.forecast-section .tab-swiper-container {
+  margin-bottom: 1.6rem;
+}
+
+.forecast-section .tab-swiper-wrapper,
+.forecast-section .card-swiper-wrapper {
+  display: flex;
+}
+
+.forecast-section .tab-swiper-wrapper {
+  margin-left: calc(-50% + 3.6rem);
+}

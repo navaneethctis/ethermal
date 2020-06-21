@@ -1,0 +1,74 @@
+.forecast-card {
+  border-radius: 1rem;
+  box-shadow: 0 0 0.8rem #bbb;
+  flex-shrink: 0;
+  width: 100% !important;
+}
+
+.forecast-card .container {
+  padding: 1.4rem 2.4rem;
+}
+
+.forecast-card .summary {
+  align-items: center;
+  display: flex;
+  margin-bottom: 1.8rem;
+}
+
+.forecast-card .temperature {
+  font-size: 5.2rem;
+  font-weight: 700;
+  margin-right: 1.4rem;
+}
+
+.forecast-card .icon {
+  height: 7.2rem;
+}
+
+.forecast-card .extras {
+  display: flex;
+  margin-top: 1.8rem;
+}
+
+.forecast-card .extras .pressure,
+.forecast-card .extras .humidity {
+  background-color: #f5faff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0.8rem 1.4rem;
+}
+
+.forecast-card .extras .pressure {
+  margin-right: 1rem;
+}
+
+.forecast-card .extras .humidity {
+  margin-left: 1rem;
+}
+
+.forecast-card .extras .title,
+.forecast-card .sun-times .title {
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.forecast-card .sun-times {
+  display: flex;
+  margin-top: 2.8rem;
+}
+
+.forecast-card .sun-times .sunrise,
+.forecast-card .sun-times .sunset {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.forecast-card .sun-times .sunset {
+  align-items: flex-end;
+}
+
+.forecast-card .sun-times .value {
+  color: #666;
+}

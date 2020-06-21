@@ -1,0 +1,7 @@
+export const SET_IS_LOADING = 'SET_IS_LOADING';
+export const SET_HAS_ERROR = 'SET_HAS_ERROR';
+export const SET_SUN_TIMES = 'SET_SUN_TIMES';
+export const SET_FORECAST = 'SET_FORECAST';
+export const SET_CHART_DATA = 'SET_CHART_DATA';
+export const SET_SUGGESTIONS = 'SET_SUGGESTIONS';
+export const CLEAR_SUGGESTIONS = 'CLEAR_SUGGESTIONS';

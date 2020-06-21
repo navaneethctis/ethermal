@@ -1,0 +1,102 @@
+.search-box {
+  position: relative;
+}
+
+.search-box form {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.search-box button {
+  border: none;
+  height: 0;
+  width: 0;
+}
+
+.search-box .icon-left,
+.search-box .icon-right {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-box .icon-left {
+  left: 2rem;
+}
+
+.search-box .icon-right {
+  cursor: pointer;
+  right: 2rem;
+}
+
+.search-box input {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.8rem #bbb;
+  font-weight: 500;
+  padding: 1.8rem 4.8rem;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.search-box input:active,
+.search-box input:focus {
+  border-color: #3da9e9;
+  outline: none;
+}
+
+.search-box .suggestions {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.8rem #bbb;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 101%;
+  width: 100%;
+  z-index: 1;
+}
+
+.search-box .suggestions .suggestion {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 1.2rem 1.2rem 1.6rem;
+}
+
+.search-box .suggestions .suggestion:not(:last-child) {
+  border-bottom: 1px solid #bbb;
+}
+
+.search-box .suggestions .last {
+  color: #666;
+}
+
+.search-box .suggestions .summary {
+  align-items: center;
+  display: flex;
+}
+
+.search-box .suggestions .weather {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.6rem;
+}
+
+.search-box .suggestions .weather span:first-child {
+  font-weight: 700;
+}
+
+.search-box .suggestions .weather span:last-child {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.search-box .suggestions .icon {
+  height: 3.6rem;
+}

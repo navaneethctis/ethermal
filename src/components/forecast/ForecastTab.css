@@ -1,0 +1,43 @@
+.forecast-tab {
+  align-items: center;
+  border: 0.2rem solid transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1.2rem;
+}
+
+.forecast-tab .day {
+  margin-bottom: 0.2rem;
+}
+
+.forecast-tab .temperature span:last-child,
+.forecast-tab .description {
+  color: #666;
+}
+
+.forecast-tab .temperature,
+.forecast-tab .icon {
+  margin-bottom: 0.4rem;
+}
+
+.forecast-tab .temperature span:first-child {
+  margin-right: 0.25rem;
+}
+
+.forecast-tab .temperature span:last-child {
+  margin-left: 0.25rem;
+}
+
+.forecast-tab .icon {
+  height: 4.8rem;
+}
+
+.forecast-tab .description {
+  font-size: 1.1rem;
+}
+
+.forecast-tab.swiper-slide-active {
+  background-color: #fffdf5;
+  border-color: #3da9e9;
+}
