@@ -20,6 +20,4 @@ input[type='text'] {
 body {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  padding: 1.6rem;
 }
