@@ -53,6 +53,7 @@ const SearchBox = () => {
         <DebounceInput
           debounceTimeout={500}
           onChange={handleChange}
+          value={query}
           autoComplete='off'
           name='query'
           placeholder='Search'
