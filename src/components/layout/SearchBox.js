@@ -1,4 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
+import {DebounceInput} from 'react-debounce-input';
 
 import './SearchBox.css';
 
@@ -49,9 +50,9 @@ const SearchBox = () => {
     <section className='search-box'>
       <form onSubmit={getForecast}>
         <i className='fas fa-map-marker-alt icon-left'></i>
-        <input
+        <DebounceInput
+          debounceTimeout={500}
           onChange={handleChange}
-          value={query}
           autoComplete='off'
           name='query'
           placeholder='Search'
