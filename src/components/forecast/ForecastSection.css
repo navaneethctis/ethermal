@@ -20,6 +20,8 @@
   display: flex;
 }
 
-.forecast-section .tab-swiper-wrapper {
-  margin-left: calc(-50% + 3.6rem);
+@media (min-width: 640px) {
+  .forecast-section .card-swiper-container {
+    width: calc(50% - 1.6rem);
+  }
 }

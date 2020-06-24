@@ -6,7 +6,6 @@ import './ForecastCard.css';
 import ForecastContext from '../../contexts/forecast/ForecastContext';
 
 import ForecastChart from './ForecastChart';
-// import SunTimesChart from './SunTimesChart';
 
 const ForecastCard = ({index, item}) => {
   const {
@@ -53,7 +52,6 @@ const ForecastCard = ({index, item}) => {
             </span>
           </div>
         </div>
-        {/* <SunTimesChart /> */}
       </div>
     </>
   );

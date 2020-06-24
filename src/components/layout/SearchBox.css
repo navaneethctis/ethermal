@@ -1,4 +1,6 @@
 .search-box {
+  margin: auto;
+  max-width: 92rem;
   padding: 1.6rem 1.6rem 0 1.6rem;
   position: relative;
 }
