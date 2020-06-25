@@ -39,7 +39,11 @@ const SearchBox = () => {
   };
 
   const getForecastFromSuggestions = placeName => {
-    setQuery(`${placeName.split(', ')[0]}, ${placeName.split(', ')[1]}`);
+    setQuery(
+      `${placeName.split(', ')[0]}${
+        placeName.split(', ')[1] ? `, ${placeName.split(', ')[1]}` : ''
+      }`
+    );
 
     getForecastGlobal(placeName);
 
